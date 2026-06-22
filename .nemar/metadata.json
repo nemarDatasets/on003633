@@ -1,41 +1,206 @@
 {
   "version": "2.0",
-  "dataset_id": "on003633",
-  "source": "openneuro",
-  "source_id": "ds003633",
+  "pipeline_stage": "enriched",
   "title": " ForrestGump-MEG",
+  "license": "CC0",
+  "dataset_type": "raw",
   "authors": {
     "Xingyu Liu": {},
     "Yuxuan Dai": {},
     "Hailun Xie": {},
     "Zonglei Zhen": {}
   },
-  "license": "CC0",
-  "dataset_type": "raw",
   "related_identifiers": [
     {
       "identifier": "10.18112/openneuro.ds003633.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsIdenticalTo"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/on003633",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003633",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003633",
+      "identifier_type": "DOI",
+      "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds000113",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
-  ],
-  "pipeline_stage": "seeded",
-  "bids_version": "1.4.0",
-  "recording_modality": [
-    "anat",
-    "meg"
-  ],
-  "datatypes": [
-    "anat",
-    "meg"
   ],
   "funding_references": [
     {
-      "funder_name": "National Key R&D Program of China (Grant No. 2019YFA0709503)"
+      "funder_name": "National Key R&D Program of China",
+      "award_number": "2019YFA0709503"
     },
     {
-      "funder_name": "National Natural Science Foundation of China (Grant No. 31771251)"
+      "funder_name": "National Natural Science Foundation of China",
+      "award_number": "31771251"
     }
   ],
-  "acknowledgements": "We would like to thank the team of  the *studyforrest* project for their great contribution in acquiring and sharing the *studyforrest* dataset (https://openneuro.org/datasets/ds000113/versions/1.3.0)."
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "anat",
+    "meg"
+  ],
+  "resource_type_specific": "Structural MRI Dataset",
+  "sizes": [
+    "0.0 KB (1 files)"
+  ],
+  "formats": [
+    ".2mm/README",
+    ".3d",
+    ".H",
+    ".K",
+    ".README",
+    ".acq",
+    ".annot",
+    ".area",
+    ".avg",
+    ".avg_curv",
+    ".avg_sulc",
+    ".avg_thickness",
+    ".bak",
+    ".cfg",
+    ".cls",
+    ".cmd",
+    ".crv",
+    ".csv",
+    ".ctab",
+    ".curv",
+    ".dat",
+    ".de",
+    ".defect_borders",
+    ".defect_chull",
+    ".defect_labels",
+    ".done",
+    ".ds/BadChannels",
+    ".eeg",
+    ".env",
+    ".fif",
+    ".flat",
+    ".gii",
+    ".gitattributes",
+    ".gz",
+    ".h5",
+    ".hc",
+    ".hist",
+    ".inflated",
+    ".inflated_avg",
+    ".inflated_pre",
+    ".infods",
+    ".jacobian_white",
+    ".json",
+    ".label",
+    ".left_right",
+    ".local-copy",
+    ".log",
+    ".lta",
+    ".m",
+    ".m3z",
+    ".md",
+    ".meg4",
+    ".mgh",
+    ".mgz",
+    ".mid",
+    ".midthickness",
+    ".mrk",
+    ".newds",
+    ".nofix",
+    ".old",
+    ".orig",
+    ".orig_avg",
+    ".pial",
+    ".pial_avg",
+    ".pial_semi_inflated",
+    ".preaparc",
+    ".py",
+    ".reg",
+    ".res4",
+    ".seghead",
+    ".segments",
+    ".sh",
+    ".smoothwm",
+    ".sphere",
+    ".stats",
+    ".sulc",
+    ".surf",
+    ".thickness",
+    ".touch",
+    ".tsv",
+    ".txt",
+    ".volume",
+    ".white",
+    ".white_avg",
+    ".xfm"
+  ],
+  "description": "ForrestGump-MEG is a multimodal neuroimaging dataset comprising magnetoencephalography (MEG) recordings from 11 subjects during passive viewing of a 2-hour audio-visual movie stimulus, along with structural MRI data. The dataset includes raw 275-channel CTF MEG data, preprocessed MEG recordings with independent component analysis decomposition, and fMRIPrep-processed anatomical MRI images with FreeSurfer surface reconstructions. This resource enables investigation of neural dynamics during naturalistic audiovisual perception and provides a foundation for studying brain responses to complex, ecologically valid stimuli. The stimulus material (Chinese-dubbed 'Forrest Gump') is available upon reasonable request and subject to a research-only data use agreement due to copyright restrictions.",
+  "methods_description": "MEG data were acquired using a 275-channel CTF system while subjects watched the Chinese-dubbed film 'Forrest Gump'. Preprocessing involved: (1) bad channel detection and removal, (2) high-pass filtering at 1 Hz to remove slow drifts, and (3) artifact removal via independent component analysis. Structural T1-weighted MRI images were minimally preprocessed using fMRIPrep's anatomical preprocessing pipeline with default settings. MEG-MRI co-registration and FreeSurfer surface reconstruction were performed.",
+  "keywords": [
+    {
+      "term": "MEG"
+    },
+    {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
+      "term": "Forrest Gump"
+    },
+    {
+      "term": "studyforrest"
+    },
+    {
+      "term": "movie watching"
+    },
+    {
+      "term": "naturalistic stimuli"
+    },
+    {
+      "term": "audio-visual stimulus"
+    },
+    {
+      "term": "audiovisual perception"
+    },
+    {
+      "term": "structural MRI"
+    },
+    {
+      "term": "independent component analysis"
+    },
+    {
+      "term": "CTF MEG system"
+    },
+    {
+      "term": "fMRIPrep"
+    },
+    {
+      "term": "FreeSurfer"
+    },
+    {
+      "term": "MEG-MRI co-registration"
+    },
+    {
+      "term": "Brain Mapping",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
+    },
+    {
+      "term": "Neuroimaging"
+    },
+    {
+      "term": "Multimodal imaging"
+    }
+  ],
+  "source_hash": "91a6557358d579820696ff4ce6f90709639837ef9dcb0c88ac67d302244c036a"
 }
