@@ -2,6 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": " ForrestGump-MEG",
+  "description": "ForrestGump-MEG is a multimodal neuroimaging dataset comprising magnetoencephalography (MEG) recordings from 11 subjects during continuous viewing of a 2-hour audio-visual movie stimulus, along with structural MRI data. The dataset includes raw 275-channel CTF MEG data, minimally preprocessed MEG recordings with artifact correction and ICA decomposition, minimally preprocessed T1-weighted images, and MEG-MRI co-registration information. This resource enables investigation of neural dynamics during naturalistic audiovisual perception and provides a foundation for studying brain responses to complex, ecologically valid stimuli.",
+  "methods_description": "MEG data were acquired using a 275-channel CTF system during passive viewing of the Chinese-dubbed 'Forrest Gump' movie. Preprocessing involved: (1) bad channel detection and removal, (2) high-pass filtering at 1 Hz to remove slow drifts, and (3) artifact removal using independent component analysis (ICA) with MNE. Structural T1-weighted MRI images were minimally preprocessed using fMRIPrep's anatomical pipeline with default settings. MEG-MRI co-registration and FreeSurfer surface reconstruction were performed.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -10,12 +12,59 @@
     "Hailun Xie": {},
     "Zonglei Zhen": {}
   },
-  "related_identifiers": [
+  "keywords": [
     {
-      "identifier": "10.18112/openneuro.ds003633.v1.0.3",
-      "identifier_type": "DOI",
-      "relation_type": "IsIdenticalTo"
+      "term": "MEG"
     },
+    {
+      "term": "Magnetoencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
+    },
+    {
+      "term": "Forrest Gump"
+    },
+    {
+      "term": "movie watching"
+    },
+    {
+      "term": "passive viewing"
+    },
+    {
+      "term": "continuous viewing"
+    },
+    {
+      "term": "naturalistic stimuli"
+    },
+    {
+      "term": "audiovisual perception"
+    },
+    {
+      "term": "CTF MEG"
+    },
+    {
+      "term": "structural MRI"
+    },
+    {
+      "term": "Chinese-dubbed"
+    },
+    {
+      "term": "fMRIPrep"
+    },
+    {
+      "term": "FreeSurfer"
+    },
+    {
+      "term": "MNE"
+    },
+    {
+      "term": "neuroimaging"
+    },
+    {
+      "term": "studyforrest"
+    }
+  ],
+  "related_identifiers": [
     {
       "identifier": "https://github.com/nemarDatasets/on003633",
       "identifier_type": "URL",
@@ -35,6 +84,11 @@
       "identifier": "10.18112/openneuro.ds000113",
       "identifier_type": "DOI",
       "relation_type": "References"
+    },
+    {
+      "identifier": "10.18112/openneuro.ds003633.v1.0.3",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
     }
   ],
   "funding_references": [
@@ -48,13 +102,13 @@
     }
   ],
   "resource_type_general": "Dataset",
+  "resource_type_specific": "Structural MRI Dataset",
   "modalities": [
     "anat",
     "meg"
   ],
-  "resource_type_specific": "Structural MRI Dataset",
   "sizes": [
-    "0.0 KB (1 files)"
+    "165.7 GB (5350 files)"
   ],
   "formats": [
     ".2mm/README",
@@ -141,66 +195,8 @@
     ".volume",
     ".white",
     ".white_avg",
-    ".xfm"
+    ".xfm",
+    ".yml"
   ],
-  "description": "ForrestGump-MEG is a multimodal neuroimaging dataset comprising magnetoencephalography (MEG) recordings from 11 subjects during passive viewing of a 2-hour audio-visual movie stimulus, along with structural MRI data. The dataset includes raw 275-channel CTF MEG data, preprocessed MEG recordings with independent component analysis decomposition, and fMRIPrep-processed anatomical MRI images with FreeSurfer surface reconstructions. This resource enables investigation of neural dynamics during naturalistic audiovisual perception and provides a foundation for studying brain responses to complex, ecologically valid stimuli. The stimulus material (Chinese-dubbed 'Forrest Gump') is available upon reasonable request and subject to a research-only data use agreement due to copyright restrictions.",
-  "methods_description": "MEG data were acquired using a 275-channel CTF system while subjects watched the Chinese-dubbed film 'Forrest Gump'. Preprocessing involved: (1) bad channel detection and removal, (2) high-pass filtering at 1 Hz to remove slow drifts, and (3) artifact removal via independent component analysis. Structural T1-weighted MRI images were minimally preprocessed using fMRIPrep's anatomical preprocessing pipeline with default settings. MEG-MRI co-registration and FreeSurfer surface reconstruction were performed.",
-  "keywords": [
-    {
-      "term": "MEG"
-    },
-    {
-      "term": "Magnetoencephalography",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
-    },
-    {
-      "term": "Forrest Gump"
-    },
-    {
-      "term": "studyforrest"
-    },
-    {
-      "term": "movie watching"
-    },
-    {
-      "term": "naturalistic stimuli"
-    },
-    {
-      "term": "audio-visual stimulus"
-    },
-    {
-      "term": "audiovisual perception"
-    },
-    {
-      "term": "structural MRI"
-    },
-    {
-      "term": "independent component analysis"
-    },
-    {
-      "term": "CTF MEG system"
-    },
-    {
-      "term": "fMRIPrep"
-    },
-    {
-      "term": "FreeSurfer"
-    },
-    {
-      "term": "MEG-MRI co-registration"
-    },
-    {
-      "term": "Brain Mapping",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D001931"
-    },
-    {
-      "term": "Neuroimaging"
-    },
-    {
-      "term": "Multimodal imaging"
-    }
-  ],
-  "source_hash": "91a6557358d579820696ff4ce6f90709639837ef9dcb0c88ac67d302244c036a"
+  "source_hash": "5cafb6ab59b5fb99c66b2ff9d92936c53583d70b60eec6797923d03e7410bb77"
 }
