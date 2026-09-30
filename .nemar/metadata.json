@@ -1,9 +1,9 @@
 {
   "version": "2.0",
-  "pipeline_stage": "enriched",
+  "pipeline_stage": "validated",
   "title": " ForrestGump-MEG",
-  "description": "ForrestGump-MEG is a multimodal neuroimaging dataset comprising magnetoencephalography (MEG) recordings from 11 subjects during passive viewing of a 2-hour audio-visual movie stimulus (Chinese-dubbed Forrest Gump), along with structural MRI data. The dataset includes raw 275-channel CTF MEG data, preprocessed MEG recordings with independent component analysis decomposition, anatomically preprocessed T1-weighted images, and MEG-MRI co-registration information. This resource enables investigation of neural dynamics during naturalistic audiovisual perception and brain-behavior relationships in ecologically valid contexts.",
-  "methods_description": "MEG data were acquired using a 275-channel CTF system during movie watching. Preprocessing involved: (1) bad channel detection and removal, (2) high-pass filtering at 1 Hz to remove slow drifts, and (3) artifact removal using independent component analysis. Structural T1-weighted images were minimally preprocessed using fMRIPrep's anatomical pipeline with default settings. MEG-MRI co-registration and surface reconstruction were performed using MNE-BIDS and FreeSurfer.",
+  "description": "ForrestGump-MEG is a magnetoencephalography dataset recorded from 11 participants while they watched the roughly 2-hour Chinese-dubbed audio-visual movie Forrest Gump. Data were acquired with a 275-channel CTF MEG system and are accompanied by T1-weighted anatomical MRI. Derivatives include preprocessed MEG (bad channel removal, high-pass filtering, ICA artifact removal), fMRIPrep-processed anatomical data, FreeSurfer surfaces, and MEG-MRI coregistration files. The authors acknowledge the studyforrest project (OpenNeuro ds000113) for its contribution.",
+  "methods_description": "MEG was recorded with a 275-channel CTF system while participants watched the Chinese-dubbed Forrest Gump movie. T1w images were processed with the fMRIPrep anatomical pipeline. MEG data were preprocessed with MNE: bad channel detection and removal, 1 Hz high-pass filtering, and ICA-based artifact removal. Data are organized in MEG-BIDS using MNE-BIDS.",
   "license": "CC0",
   "dataset_type": "raw",
   "authors": {
@@ -22,34 +22,16 @@
       "value_uri": "http://id.nlm.nih.gov/mesh/D015225"
     },
     {
-      "term": "movie watching"
-    },
-    {
       "term": "naturalistic stimuli"
     },
     {
-      "term": "audiovisual perception"
-    },
-    {
-      "term": "structural MRI"
-    },
-    {
-      "term": "independent component analysis"
+      "term": "movie watching"
     },
     {
       "term": "Forrest Gump"
     },
     {
-      "term": "CTF MEG"
-    },
-    {
-      "term": "fMRIPrep"
-    },
-    {
-      "term": "FreeSurfer"
-    },
-    {
-      "term": "passive viewing"
+      "term": "audio-visual"
     }
   ],
   "related_identifiers": [
@@ -59,24 +41,24 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=on003633",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003633",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
     },
     {
-      "identifier": "10.18112/openneuro.ds000113",
-      "identifier_type": "DOI",
-      "relation_type": "References"
-    },
-    {
       "identifier": "10.18112/openneuro.ds003633.v1.0.3",
       "identifier_type": "DOI",
       "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/on003633",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1101/2021.06.04.446837",
+      "identifier_type": "DOI",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -96,7 +78,7 @@
     "meg"
   ],
   "sizes": [
-    "165.7 GB (5350 files)"
+    "154 GB (5350 files)"
   ],
   "formats": [
     ".2mm/README",
